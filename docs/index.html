@@ -1,0 +1,182 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mobifone Free Wifi</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width">
+    <link rel="shortcut icon" type="image/png" href="https://content.meganet.com.vn/resource/demo/agency/Saturn/mobifone/new1511/icon.png"/>
+
+    <link rel="stylesheet" type="text/css" href="https://content.meganet.com.vn/resource/demo/agency/Saturn/mobifone/new1511/bootstrap.min.css">
+    <script type="text/javascript" src="https://content.meganet.com.vn/resource/demo/agency/Saturn/mobifone/new1511/mjquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://content.meganet.com.vn/resource/demo/agency/Saturn/mobifone/new1511/style.css">
+</head>
+<body>
+    <div class="header" style="width: 100%">
+        <!-- <img class='visible-xs' src="m_header.jpg"  width="100%">     -->
+        <!-- <img class='hidden-xs' src="l_header.jpg"  width="100%">     -->
+        <img src="https://content.meganet.com.vn/resource/demo/agency/Saturn/mobifone/new1511/mobifone.png" style="margin-left: 10px" id="logo_mobifone">
+    </div>
+    <div class="content1" style="width: 100%">
+        <div class="col-xs-12">
+            <h3 class="nobold text-center text-primary">TO ENJOY MOBIFONE'S FREE WIFI, PLEASE SELECT:</h3>
+            <h4 class="nobold text-center text-primary">
+                (Để sử dụng Wifi miễn phí của <img src="https://content.meganet.com.vn/resource/demo/agency/Saturn/mobifone/new1511/logo.png" class='logo1'> vui lòng chọn:)
+            </h4>
+            <div class="text-center" style="margin-top: 30px">
+                <button type="button" class="btn btn-primary btn-cus" onclick="travel('Overseas')">
+                    <span>Travelling Overseas</span>
+                    <div class="clearfix"></div>
+                    <small>(Bạn đi nước ngoài)</small>
+                </button>
+                <div class="visible-xs clearfix" style="margin: 10px"></div>
+                <button type="button" class="btn btn-primary btn-cus" onclick="travel('Vietnam')">
+                    <span>Travelling to Vietnam</span>
+                    <div class="clearfix"></div>
+                    <small>(Bạn đến Việt Nam)</small>
+                </button>
+            </div>
+        </div>
+        <div class="fixed-bottom">
+            <div class="col-xs-4 height-15 padding-0 bg-red"></div>
+            <div class="col-xs-4 height-15 padding-0 bg-yellow"></div>
+            <div class="col-xs-4 height-15 padding-0 bg-blue"></div>
+        </div>
+    </div>
+    <div class="content2">
+        <!-- <div class="bg-mobile visible-xs visible-sm">
+            <img src="https://content.meganet.com.vn/resource/demo/agency/Saturn/mobifone/new1511/m_content2.jpg" width="100%">
+        </div> -->
+        <div class="col-xs-12 col-sm-10 col-sm-push-1 col-md-12 col-md-push-0 col-lg-10 col-lg-push-1 padding-0 survey">
+            <div class="option1 col-md-10 col-md-push-1 form-group">
+                <label class="control-label text-2 text-primary">BẠN THƯỜNG DÙNG CÁCH NÀO ĐỂ LIÊN LẠC KHI ĐI NƯỚC NGOÀI ?</label>
+                <div class="text-center right-custom">
+                    <button type="button" class="btn btn-default btn-cus-2" id="roam" onclick="call('roam')">
+                        <span>Dịch vụ chuyển vùng Quốc tế</span>
+                    </button>
+                    <div class="visible-xs visible-sm clearfix" style="margin: 5px"></div>
+                    <button type="button" class="btn btn-default btn-cus-2" id="freewifi" onclick="call('freewifi')">
+                        <span>Sử dụng Wifi miễn phí</span>
+                    </button>
+                    <div class="visible-xs visible-sm clearfix" style="margin: 5px"></div>
+                    <button type="button" class="btn btn-default btn-cus-2" id="sim" onclick="call('sim')">
+                        <span>Mua SIM nội địa</span>
+                    </button>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+            <div class="option1 col-md-10 col-md-push-1 form-group">
+                <label class="control-label text-2 text-primary" style="margin-top: 5px;">
+                    BẠN SẼ ĐI QUỐC GIA NÀO ?
+                </label>
+                <div class="clearfix visible-xs"></div>
+                <input class="form-control input-lg pull-right" placeholder="Nhật bản, Hàn Quốc,..." id="country">
+            </div>
+            <div class="clearfix"></div>
+            <div class="text-center col-md-6 col-md-push-3 col-lg-6 group-login">
+                <div class="col-xs-6 padding-5">
+                    <button type="button" class="btn btn-primary btn-login" disabled="disabled" onclick="loginInternet()" id="access2">
+                        <span>KẾT NỐI INTERNET</span>
+                        <div class="clearfix"></div>
+                        <small>(Access Internet)</small>
+                    </button>
+                </div>
+                <div class="col-xs-6 padding-5">
+                    <button type="button" class="btn btn-default btn-login" style="background-color: rgba(211,211,211,0.6); color: #ffffff" onclick="loginInternet()">
+                        <span>NHẮC TÔI SAU</span>
+                        <div class="clearfix"></div>
+                        <small>(Remind me later)</small>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="content3" style="width: 100%">
+        <!-- <div class="bg-mobile visible-xs visible-sm">
+            <img src="https://content.meganet.com.vn/resource/demo/agency/Saturn/mobifone/new1511/m_content3.jpg" width="100%">
+        </div> -->
+        <div class="col-xs-12 col-sm-8 col-sm-push-2 survey text-center">
+            <h4 class="text-2 text-primary">
+                <span>Stay connect with</span>
+                <img src="https://content.meganet.com.vn/resource/demo/agency/Saturn/mobifone/new1511/logo.png" class='logo2'>
+                <span>roaming services by setting:</span>
+            </h4>
+            <h4>
+                <div class="clearfix"></div>
+                <span style="color: red">Menu - Setting - Select Network - Manual - Select "VN MOBIFONE/MOBIFONE/45201" - OK</span>
+            </h4>
+            <div class="text-center">
+                <button type="button" class="btn btn-primary btn-login" onclick="loginInternet()">
+                    <span>KẾT NỐI INTERNET</span>
+                    <div class="clearfix"></div>
+                    <small>(Access Internet)</small>
+                </button>
+            </div>
+        </div>
+    </div>
+ <form action="/wifi/register" id="formLogin1" method="POST" style="display: none">
+        <input type="hidden" name="redirect" id="redirect1" value="">
+    </form>
+      <script type="text/javascript" src="https://content.meganet.com.vn/resource/demo/cssjs/js/bootstrap-native.min.js"></script>
+    <script type="text/javascript">
+        function popup(){
+            document.body.innerHTML += '<div id="modalPopup" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true"><div class="modal-dialog  modal-sm"><div class="modal-content" id="content-popup"></div></div></div>';
+            // Form login
+            document.body.innerHTML +='<form action="/wifi/register" id="formLogin1" method="POST" style="display: none"><input type="hidden" name="redirect" id="redirect1" value=""></form>';
+
+            var myModal = document.getElementById('modalPopup');
+            var myModalInstance = new Modal(myModal, {
+                content: '<div class="modal-body"><img src="info.gif" width="100%"/></div>',
+                backdrop: 'static',
+                keyboard: false
+            });
+
+            myModalInstance.show();
+            myModal.addEventListener('shown.bs.modal', function(event){
+                var content_popup = document.getElementById("content-popup");
+                var popup_height = content_popup.clientHeight;
+                var device_height = screen.height;
+                content_popup.style.marginTop = (device_height - popup_height)/2 - 50 + "px";
+                setTimeout(function(){
+                    myModalInstance.hide();
+                }, 3000)
+            });
+        }
+        popup();
+
+        var obj = {};
+        function travel(data) {
+            obj.travel = data;
+            $(".content1").css("display","none");
+            if (data == 'Vietnam') {
+                $(".content3").css("display","block");
+            }
+            if (data == 'Overseas') {
+                $(".content2").css("display","block");
+                $("#logo_mobifone").attr("src","https://content.meganet.com.vn/resource/demo/agency/Saturn/mobifone/new1511/mobifone2.png");
+            } 
+        }
+        function call(data) {
+            obj.call = data;
+            $(".btn-cus-2").removeClass('btn-primary');
+            $(".btn-cus-2").addClass('btn-default');
+            $("#" + data).addClass('btn-primary')
+            $("#" + data).removeClass('btn-default');
+            $("#access2").removeAttr("disabled");
+        }
+        function loginInternet() {
+            // if ($("#country").val()) {
+            //     obj.country = $("#country").val();    
+            // }
+            // console.log(obj);
+            // var linkTracking = m.urlFor('click', {
+            //     survey: JSON.stringify(obj)
+            // });
+            // $("#formLogin1").attr("action","/wifi/login");
+            // $("#redirect1").val(linkTracking);
+            // $("#formLogin1").submit();
+            window.location="http://www.mobifone.vn/wps/portal/public/dich-vu/quoc-te/quoc-te-chi-tiet/thue-bao-mobifone-ra-nuoc-ngoai";
+        }
+    </script>
+</body>
+</html>
