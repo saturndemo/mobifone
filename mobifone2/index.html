@@ -1,0 +1,442 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mobifone</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" type="text/css" href="https://content.meganet.com.vn/resource/demo/cssjs/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="https://content.meganet.com.vn/resource/demo/cssjs/css/swiper.min.css">
+    <link rel="stylesheet" type="text/css" href="https://content.meganet.com.vn/resource/demo/cssjs/css/animate.css">
+     <link rel="shortcut icon" type="image/png" href="icon.png"/>
+
+    <style type="text/css">
+
+        html, body {
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            background: #000;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .col-xs-6{
+            width: 50%;
+        }
+        .col-xs-4{
+            padding: 0px;
+        }
+        @keyframes animate_point{
+            0% { -webkit-transform: scale(1); transform: scale(1); }
+            30% { -webkit-transform: scale(1); transform: scale(1); }
+            40% { -webkit-transform: scale(1.2); transform: scale(1.2); }
+            50% { -webkit-transform: scale(1); transform: scale(1); }
+            60% { -webkit-transform: scale(1); transform: scale(1); }
+            70% { -webkit-transform: scale(1.1); transform: scale(1.1); }
+            80% { -webkit-transform: scale(1); transform: scale(1); }
+            100% { -webkit-transform: scale(1); transform: scale(1); }
+        }
+
+        .swiper-button-prev {
+            background-image: url('arrow_pre.png');
+            background-size: 100%;
+            width: 10%;
+        }
+        .swiper-button-next {
+            background-image: url('arrow_next.png');
+            background-size: 100%;
+            width: 10%;
+        }
+
+        @media screen and (min-width: 100px) {
+            .swiper-container {
+                position: absolute;
+                height: auto;
+                width: 100%;
+            }
+            .swiper-slide {
+                text-align: center;
+                background: #000;
+            }
+            
+            @keyframes slideLeftText{
+                0%{
+                    opacity: 0;
+                    left: 25%;
+                }
+                50%{
+                    opacity: 0.2;
+                }
+                100%{
+                    opacity: 1;
+                    left: 31%;
+                }
+            }
+
+            @keyframes slideDownText{
+                0%{
+                    opacity: 0;
+                    width: 90%;
+                    left: 8%;
+                }
+                50%{
+                    opacity: 0.2;
+                }
+                100%{
+                    opacity: 1;
+                    width: 70%;
+                }
+            }
+            
+            @keyframes object1_sl1{
+                0%{
+                    opacity: 0;
+                    top: 20%;
+                }
+                100%{
+                    opacity: 1;
+                    top: 25%;
+                }
+            }
+
+            @keyframes object2_sl1{
+                0%{
+                    opacity: 0;
+                    width: 80%;
+                    left: 10%;
+                }
+                100%{
+                    opacity: 1;
+                    width: 60%;
+                }
+            }
+
+            @keyframes btn_survey{
+                0%{
+                    opacity: 0;
+                    margin-top: 5%;
+                }
+                100%{
+                    opacity: 1;
+                    margin-top: 0%;
+                }
+            }
+
+            
+            /* slide 1 */
+
+            .logo_sl1{
+                position: absolute;
+                width: 22%;
+                top: 10%;
+                left: 38%;
+                animation: zoomIn 1s;
+            }
+            .object1_sl1{
+                position: absolute;
+                width: 58%;
+                top: 25%;
+                left: 20%;
+                animation: object1_sl1 0.5s linear;
+            }
+
+            .object2_sl1{
+                position: absolute;
+                width: 60%;
+                top: 32%;
+                left: 19%;
+                animation: object2_sl1 0.5s linear;
+            }
+            .object3_sl1{
+                position: absolute;
+                width: 100%;
+                top: 76%;
+                left: 0%;
+                animation: fadeIn 1s;
+            }
+            .btn_survey{
+                position: absolute;
+                width: 100%;
+                top: 85%;
+                left: 0%;
+            }
+            .btn_survey1{
+                animation: btn_survey 0.5s linear;
+            }
+            .btn_survey2{
+                animation: btn_survey 0.5s linear;
+            }
+            .btn_survey3{
+                animation: btn_survey 0.5s linear;
+            }
+
+
+            /* slide 2 */
+
+            .logo{
+                position: absolute;
+                width: 17%;
+                top: 17%;
+                left: 13%;
+                animation: zoomIn 1s;
+            }
+
+            .object1{
+                position: absolute;
+                width: 50%;
+                top: 20%;
+                left: 31%;
+                animation: slideLeftText 0.5s linear;
+                
+            }
+            .object2{
+                position: absolute;
+                width: 70%;
+                top: 29%;
+                left: 15%;     
+                animation: slideDownText 0.5s linear;
+            }
+            .pointer{
+                position: absolute;
+                width: 15%;
+                top: 79%;
+                left: 24%;
+                animation: animate_point 2s linear infinite;
+                
+            }
+            .btnlogin{
+                position: absolute;
+                width: 45%;
+                top: 80%;
+                left: 30%;
+            }
+            .animation_pulse{
+                animation: pulse 0.5s linear;
+            }
+        }
+
+        @media screen and (min-width: 768px) {
+            
+        }
+
+        @media screen and (min-width: 1024px) {
+
+        }
+
+        @media screen and (min-width: 1025px) {
+            .swiper-container {
+                position: absolute;
+                height: 100%;
+            }
+            .swiper-slide {
+                text-align: center;
+                background: #fff;
+            }   
+            .footer{
+                position: fixed;
+                bottom: 0;
+            
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide img1">
+                <img src="" width="100%" id="img_1">
+                <div class="logo_sl1" style="display: none">
+                    <img src="logo.png" width="100%">
+                </div>
+                <div class="object1_sl1"  style="display: none">
+                    <img src="object1_sl1.png" width="100%">
+                </div>
+                <div class="object2_sl1"  style="display: none">
+                    <img src="object2_sl1.png" width="100%">
+                </div>
+                <div class="object3_sl1"  style="display: none">
+                    <img src="object3_sl1.png" width="100%">
+                </div>
+                <div class="btn_survey col-xs-12" >
+                    <div class="btn_survey1 col-xs-4"  style="display: none" onclick="Click_slide2()">
+                        <img src="button1.png" width="100%">
+                    </div>
+                    <div class="btn_survey2 col-xs-4"  style="display: none" onclick="Click_slide2()">
+                        <img src="button2.png" width="100%">
+                    </div>
+                    <div class="btn_survey3 col-xs-4" style="display: none" onclick="Click_slide2()">
+                        <img src="button3.png" width="100%">
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide img2" style="display: none">
+                <img src="" width="100%" id="img_2">
+                <div class="logo" style="display: none">
+                    <img src="logo.png" width="100%">
+                </div>
+                <div class="object1" style="display: none">
+                    <img src="object1.png" width="100%">
+                </div>
+                <div class="object2" style="display: none">
+                    <img src="object2.png" width="100%">
+                </div>
+               
+                <div class="btnlogin" style="display: none">
+                    <img src="btnlogin.png" width="100%">
+                </div>
+                 <div class="pointer" style="display: none" >
+                    <img src="pointer.png" width="100%">
+                </div>
+            </div>
+
+        </div>
+       <!--  <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div> -->
+    </div>
+    
+    <script type="text/javascript" src="https://mkt.meganet.com.vn/resource/demo/cssjs/js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="https://content.meganet.com.vn/resource/demo/cssjs/js/swiper.min.js"></script>
+
+
+    <form action="/wifi/register" id="formLogin1" method="POST" style="display: none">
+        <input type="hidden" name="redirect" id="redirect1" value="">
+    </form>          
+
+    <script type="text/javascript">
+
+        $.fn.extend({
+          animateCss: function(animationName, callback) {
+            var animationEnd = (function(el) {
+              var animations = {
+                animation: 'animationend',
+                OAnimation: 'oAnimationEnd',
+                MozAnimation: 'mozAnimationEnd',
+                WebkitAnimation: 'webkitAnimationEnd',
+              };
+
+              for (var t in animations) {
+                if (el.style[t] !== undefined) {
+                  return animations[t];
+                }
+              }
+            })(document.createElement('div'));
+
+            this.addClass('animated ' + animationName).one(animationEnd, function() {
+              $(this).removeClass('animated ' + animationName);
+
+              if (typeof callback === 'function') callback();
+            });
+
+            return this;
+          },
+        });
+
+        var banner_m_width      = 800,
+            banner_m_height     = 1250,
+            banner_l_width      = 800,
+            banner_l_height     = 1250;
+
+        var window_width    = window.innerWidth,
+            window_height   = window.innerHeight;
+
+        var img_m_width     = window_width,
+            img_m_height    = window_width * banner_m_height / banner_m_width,
+            img_l_height    = window_height,
+            img_l_width     = window_height * banner_l_width / banner_l_height;
+
+        $("#img_1").attr("src","mobile2.jpg");
+        $("#img_2").attr("src","mobile.jpg");
+
+        // if (screen.width >= 1024) {
+        //     $("#img_1").attr("src","https://mkt.meganet.com.vn/resource/demo/ag/california/new1709/mobile.jpg");
+        // } else {
+        //     $("#img_1").attr("src","https://mkt.meganet.com.vn/resource/demo/ag/california/new1709/mobile.jpg");
+        // }   
+
+        $(document).ready(function(){
+            $('.logo_sl1').show();
+            setTimeout(function(){
+                $('.object1_sl1').show();
+            },700)
+            setTimeout(function(){
+                $('.object2_sl1').show();
+            },1500)
+            setTimeout(function(){
+                $('.object3_sl1').show();
+            },2000)
+            setTimeout(function(){
+                $('.btn_survey1').show();
+            },2500)
+            setTimeout(function(){
+                $('.btn_survey2').show();
+            },2700)
+            setTimeout(function(){
+                $('.btn_survey3').show();
+            },2900)
+        })
+
+        var frame = 1;
+
+        // var swiper = new Swiper('.swiper-container', {
+        //     nextButton: '.swiper-button-next',
+        //     prevButton: '.swiper-button-prev',
+        //     effect: 'slide',
+        //     speed: 1000,
+        //     autoplay: 4000,
+        //     loop: false,
+        //     // autoplayDisableOnInteraction: false,
+        //     onSlideChangeEnd: function (swiper) {
+        //         if( frame == 1){
+                    
+        //         }
+        //         if (swiper.activeIndex == 1) {
+        //             swiper.stopAutoplay();
+        //         }
+        //     }
+        // });
+
+        if (screen.width > 1024) {
+            $(".swiper-container").css("width", img_l_width + "px");
+            $(".swiper-container").css("margin-left", (window_width - img_l_width)/2 + "px");
+        } else {
+
+        }
+
+        $(document).ready(function(){
+            
+        })
+        function Click_slide2(){
+            $('.img1').hide();
+            $('.img2').fadeIn();
+            setTimeout(function(){
+               
+                $('.logo').show();
+            },500)
+            
+            setTimeout(function(){
+                $('.object1').show();
+            },1000)
+            setTimeout(function(){
+                $('.object2').show();
+            },1500)
+            setTimeout(function(){
+                 $('.btnlogin').show();
+                 $('.btnlogin').animateCss('flipInX');
+            },2000)
+            setTimeout(function(){
+                 $('.pointer').fadeIn();
+            },2800)
+        }
+        function loginInternet(){
+            // var linkTracking = m.urlFor('click');
+            //  $("#formLogin1").attr("action","/wifi/login");
+            //  $("#redirect1").val(linkTracking);
+            // $("#formLogin1").submit();
+           window.location = "http://www.mobifone.vn/wps/portal/public/dich-vu/quoc-te/quoc-te-chi-tiet/thue-bao-ra-nuoc-ngoai/roam-combo";  
+           
+        }
+    </script>
+</body>
+</html>
